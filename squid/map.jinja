@@ -20,4 +20,11 @@
         'conf_file': 'squid.conf',
         'cache': '/var/squid/cache',
      },
+    'openSUSE Leap': {
+        'pkgs': ['squid'],
+        'service': 'squid',
+        'conf_dir': '/usr/local/etc/squid',
+        'conf_file': 'squid.conf',
+        'cache': '/var/squid/cache',
+     },
 }, grain='os', merge=salt['pillar.get']('squid:lookup')) %}
